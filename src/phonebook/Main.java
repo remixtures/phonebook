@@ -15,10 +15,10 @@ public class Main {
         List<String> namesToSearch = Files.readAllLines(Paths.get(namesToSearchPath));
 
         AlgorithmFactory algoFactory = new AlgorithmFactory(phoneBook, namesToSearch);
-        Algorithm linearSearch = algoFactory.getAlgorithm("phonebook.LinearSearch");
-        Algorithm bubbleSortJumpSearch = algoFactory.getAlgorithm("phonebook.BubbleSortJumpSearch");
-        Algorithm quickSortBinarySearch = algoFactory.getAlgorithm("phonebook.QuickSortBinarySearch");
-        Algorithm hashTableSearch = algoFactory.getAlgorithm("phonebook.HashTableSearch");
+        Algorithm linearSearch = algoFactory.getAlgorithm("LinearSearch");
+        Algorithm bubbleSortJumpSearch = algoFactory.getAlgorithm("BubbleSortJumpSearch");
+        Algorithm quickSortBinarySearch = algoFactory.getAlgorithm("QuickSortBinarySearch");
+        Algorithm hashTableSearch = algoFactory.getAlgorithm("HashTableSearch");
 
         linearSearch.start();
         bubbleSortJumpSearch.start();

@@ -14,13 +14,13 @@ public class AlgorithmFactory {
 
     public Algorithm getAlgorithm(String algorithmType) {
         switch (algorithmType) {
-            case "phonebook.LinearSearch":
+            case "LinearSearch":
                 return new LinearSearch(phoneBook, namesToSearch);
-            case "phonebook.BubbleSortJumpSearch":
+            case "BubbleSortJumpSearch":
                 return new BubbleSortJumpSearch(phoneBook, namesToSearch);
-            case "phonebook.QuickSortBinarySearch":
+            case "QuickSortBinarySearch":
                 return new QuickSortBinarySearch(phoneBook, namesToSearch);
-            case "phonebook.HashTableSearch":
+            case "HashTableSearch":
                 return new HashTableSearch(phoneBook, namesToSearch);
             default:
                 return null;
